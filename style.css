@@ -8,5 +8,34 @@ box-sizing: border-box;
 html,body
 {
     min-height: 100%;
-    fo
+    font-family: 'Inter', sans-serif;
+}
+.wrapper
+{
+    width: 100%;
+
+}
+header
+{
+    width: 100%;
+    background-color:#CAD3F2;
+}
+.header-content
+{
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    align-items: center;
+}
+.header-logo
+{
+    width: 100px;
+}
+.header-menu-container
+{
+    display: flex;
+    gap:20px;
+
 }
