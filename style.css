@@ -84,7 +84,7 @@ a.btn
     border: 1px solid #000000;
     color: #000000;
     border-radius: 5px;
-    padding: 15px 35px;
+    
 }
 a.btn:hover
 {
@@ -99,8 +99,15 @@ a.btn:active
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
+    padding: 15px 35px;
 }
-
+.on_review
+{
+    padding: 5px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
 /* Header */
 .header-content
 {
@@ -241,11 +248,18 @@ a:hover
     border-radius: 10px;
     width: 430px;
 }
+
+
+
+
+
+
 .catalog_section
 {
     margin: 0 auto;
     width: 1170px;
-    padding: 15px 35px;
+    /* Зачем там боковые отступы то лол */
+    padding: 35px 15px  50px;
 }
 .catalog_container
 {
@@ -359,4 +373,115 @@ a:hover
     padding: 5px;
     border: 1px solid #000000;
     border-radius: 5px;
+}
+
+
+
+.our-benefits_section
+{
+    width: 1100px;
+    margin: 0 auto;
+}
+.benefits_container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.benefits_container > div
+{
+    width: 500px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+.benefits_container > div p
+{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+}
+.benefits_container > div img
+{
+    height: 30px;
+    width: 30px;
+}
+.reviews_section
+{
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.reviews_container
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+}
+.review
+{
+    width: 350px;
+    height: 228px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.srars_container
+{
+    display: flex;
+    gap: 10px;
+}
+.srars_container img
+{
+    width: 20px;
+    height: 20px;
+}
+.review p
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.avatar-name_more-btn_container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.avatar-name_container
+{
+    display: flex;
+    gap: 15px;
+    
+}
+.avatar-name_container img
+{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+.name-surname_container
+{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+p.review-text
+{
+    width: 285px;
+    height: 76px;
+    display: inline-block;
 }
