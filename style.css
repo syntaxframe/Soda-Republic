@@ -11,7 +11,7 @@ font-family: 'Inter', sans-serif;
 html,body
 {
     min-height: 100%;
-    
+    background: #F9F8F8;
     
 }
 /* для контейнера с большой картинкой */
@@ -36,7 +36,7 @@ h3
     font-weight: 500;
     font-size: 22px;
     line-height: 27px; 
-    margin-bottom: 15px;
+    
 }
 /* в основном для названий товаров в карточках */
 h4
@@ -84,9 +84,6 @@ a.btn
     border: 1px solid #000000;
     color: #000000;
     border-radius: 5px;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
     padding: 15px 35px;
 }
 a.btn:hover
@@ -97,14 +94,21 @@ a.btn:active
 {
 
 }
+.on_big_picture_container
+{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+}
+
 /* Header */
 .header-content
 {
     margin: 0 auto;
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    padding: 25px 0;
+    padding: 25px 15px;
     align-items: center;
 }
 .header-logo
@@ -251,7 +255,10 @@ a:hover
 .catalog_categories-selection_chechox_container
 {
     width: 100%;
-    margin-top: 42px;
+    margin-top: 47px;
+}
+.catalog_categories-selection_chechox_container > div
+{
     background: #ffffff;
     border: #000000 1px solid;
     display: flex;
@@ -264,9 +271,92 @@ a:hover
 .catalog-categories_container
 {
     padding: 0 25px;
-    
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
 }
 .catalog-catigories_container_item
 {
-
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.category-products_container
+{
+    width: 100%;
+    display: grid;
+    row-gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+}
+.product_card
+{
+    width: 250px;
+    height: 360px;
+    padding: 0;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 170px 1fr;
+}
+.product_card_picture_container
+{
+    border-bottom: 1px solid #000000;
+    border-radius: 8px 8px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product_card_picture_container img
+{
+    height: 140px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.category_lemonade
+{
+    background-color: #9C78C3;
+}
+.product_card_content
+{
+    padding: 10px;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.product_card_content h4
+{
+    height: 48px;
+}
+.product_card_content a
+{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 10px 0;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+.vol-price_container{
+    display: flex;
+    justify-content: space-between;
+}
+.vol_container
+{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.vol-price_container p 
+{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.with_borders
+{
+    padding: 5px;
+    border: 1px solid #000000;
+    border-radius: 5px;
 }
