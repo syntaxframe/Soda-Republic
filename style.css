@@ -14,6 +14,37 @@ html,body
     
     
 }
+/* для контейнера с большой картинкой */
+h1
+{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+}
+/* для названий секций */
+h2
+{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px; 
+    margin-bottom: 35px;
+    gap: 0px;
+}
+/* для названия категорий в каталоге */
+h3
+{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px; 
+    margin-bottom: 15px;
+}
+/* в основном для названий товаров в карточках */
+h4
+{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
 /* для полей  поиска */
 input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
@@ -26,13 +57,47 @@ input[type="search"]{background: none;border: none;box-shadow: none; }
 .wrapper
 {
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 header
 {
     width: 100%;
     background-color:#CAD3F2;
 }
+main
+{
+    flex: 1 1 auto;
+    height: 100%;
+    width: 100%;
+}
+a.btn, a.btn:hover, a.btn:active
+{
+    text-decoration: none;
+    
+}
+a.btn
+{
+    display: inline-block;
+    background: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    padding: 15px 35px;
+}
+a.btn:hover
+{
+
+}
+a.btn:active
+{
+
+}
+/* Header */
 .header-content
 {
     margin: 0 auto;
@@ -82,7 +147,7 @@ a:hover
 .header-menu
 {
     display: flex;
-    gap: 25px;
+    gap: 35px;
     margin-left: 0;
     padding-left: 0; 
     list-style-type: none;
@@ -143,4 +208,65 @@ a:hover
     right: 0;
     cursor: pointer;
     color: #212529;
+}
+
+/* Main */
+/* Подвигать картинку */
+.big-picture-on-bg_section
+{
+    background: center/cover url(img/png/big_soda_bottle_image.png) no-repeat ;
+    height: 750px;
+    padding: 150px 0px;
+    border-bottom: #000000 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.big-picture_content
+{
+    
+    display: flex;
+    width: 1100px;
+    flex-direction: column;
+    gap: 35px;
+}
+.big-picture_text-container
+{
+    padding: 20px 30px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 430px;
+}
+.catalog_section
+{
+    margin: 0 auto;
+    width: 1170px;
+    padding: 15px 35px;
+}
+.catalog_container
+{
+    display: grid;
+    grid-template-columns: 320px 850px;
+}
+.catalog_categories-selection_chechox_container
+{
+    width: 100%;
+    margin-top: 42px;
+    background: #ffffff;
+    border: #000000 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 20px;
+    gap: 15px;
+    border-radius: 10px;
+}
+.catalog-categories_container
+{
+    padding: 0 25px;
+    
+}
+.catalog-catigories_container_item
+{
+
 }
