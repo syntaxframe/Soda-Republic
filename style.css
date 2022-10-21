@@ -315,6 +315,13 @@ a:hover
     gap: 15px;
 
 }
+.categories-selection_checkbox_item h4
+{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
 .catalog-categories_container
 {
     padding: 0 25px;
@@ -554,6 +561,7 @@ p.review-text
     border-radius: 5px;
     margin-top: 45px;
     margin-bottom: 25px;
+    border: 1px solid #000000;
 }
 .subscribe-e-mail_input::placeholder
 {

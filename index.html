@@ -68,11 +68,16 @@
                     <!-- чекбоксы для фильтрования категорий -->
                     <div class="catalog_categories-selection_chechox_container">
                         <div>
-                        <h4>
+                        <h3>
                             Категории
-                        </h4>
+                        </h3>
                         <div class="categories-selection_checkbox_item">
-
+                            <input type="checkbox" value="lemonade" checked>
+                            <h4>Лимонады</h4>
+                        </div>
+                        <div class="categories-selection_checkbox_item">
+                            <input type="checkbox" value="tonic" checked>
+                            <h4>Тонизирующие напитки</h4>
                         </div>
                         </div>
                         <!-- запилить чекбоксы -->
@@ -81,7 +86,7 @@
                     <div class="catalog-categories_container">
                         <!-- Категория товаров с товарами -->
                         
-                        <div class="catalog-catigories_container_item">
+                        <div class="catalog-catigories_container_item" id="lemonadeCategory">
                             <h3>
                                 Лимонады
                             </h3>
@@ -184,7 +189,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="catalog-catigories_container_item">
+                        <div class="catalog-catigories_container_item" id="tonicCategory">
                             <h3>
                                 Тонизирующие напитки
                             </h3>
@@ -378,5 +383,6 @@
             </div>
         </footer>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
