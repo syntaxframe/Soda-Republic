@@ -1,7 +1,7 @@
 const checkboxes = document.body.querySelectorAll('.catalog_categories-selection_chechox_container input')
 const lemonadeCategory = document.body.querySelector('#lemonadeCategory');
 const tonicCategory = document.body.querySelector('#tonicCategory');
-
+const noneCategorySelected = document.body.querySelector('#none_category_selected');
 
 // Добавить надпись что ничего не выбрано если ни один чекбокс не активирован
 function checkboxChange(checkbox) {
@@ -10,10 +10,12 @@ function checkboxChange(checkbox) {
         if (checkbox.checked) {
             if (checkbox.value === 'lemonade') {
                 lemonadeCategory.style.display = 'grid'
+                noneCategorySelected.style.display = 'none'
             }
     
             else if (checkbox.value === 'tonic') {
                 tonicCategory.style.display = 'grid'
+                noneCategorySelected.style.display = 'none'
             }
         }
         // Проверка на то, что чекбокс не активирован
@@ -25,6 +27,10 @@ function checkboxChange(checkbox) {
             else if (checkbox.value === 'tonic') {
                 tonicCategory.style.display = 'none'
             }
+            if (tonicCategory.style.display == 'none' && lemonadeCategory.style.display == 'none')
+            {
+                noneCategorySelected.style.display = 'flex'
+            }
         }
     })
 }
@@ -32,3 +38,4 @@ function checkboxChange(checkbox) {
 
 // Вызов функции для проверки чекбоксов
 checkboxes.forEach(checkboxChange)
+

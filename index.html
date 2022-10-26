@@ -15,7 +15,7 @@
                 <div class="header-menu-container">
                     <a href="">Войти</a>
                     <a href="">Нет аккаунта?</a>
-                    <a href=""><img src="img/svg/bag.svg" alt=""></a>
+                    
                     
                 </div>
             </div>
@@ -85,7 +85,9 @@
                     <!-- Контейнер для категорий товаров каталога -->
                     <div class="catalog-categories_container">
                         <!-- Категория товаров с товарами -->
-                        
+                        <div id="none_category_selected">
+                            <H2>Вы не выбрали ни одной категории</H2>
+                        </div>
                         <div class="catalog-catigories_container_item" id="lemonadeCategory">
                             <h3>
                                 Лимонады
@@ -112,7 +114,16 @@
                                                 </p>
                                             </div>
                                         </div>
-                                        <a href="" class="btn on_product_card">Добавить в корзину</a>
+                                        <div class="product_card-activated_container">
+                                           
+                                            <button class="on_product_card activated left">+</button> 
+                                                                                            
+                                            <p class="prodict_card-bought_counter"></p> 
+                                            
+                                            <button class="on_product_card activated right">-</button> 
+                                                                                       
+                                        </div>
+                                        <a href="" class="btn">Добавить в корзину</a>
                                     </div>
                                 </div>
                                 <div class="product_card">
